@@ -13,6 +13,8 @@ Requirement:
  - git clone git@github.com:satryaranggatiket/message-producer.git
  - cd message-producer
  - npm install
- - node app.js
+
+ Running Application:
+ node app.js
 
 Bug or any inquiries, please contact satrya.rangga@tiket.com

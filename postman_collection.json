@@ -1,0 +1,93 @@
+{
+	"info": {
+		"_postman_id": "9e095dd0-2457-4c60-b90e-b7030e4af53a",
+		"name": "Queue",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "List Refund",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3010/refund",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3010",
+					"path": [
+						"refund"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Refund",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"orderId\": \"521029292139\",\n\t\"name\": \"Satrya Rangga\",\n\t\"amount\": 250000,\n\t\"reason\": \"Lupa\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3010/refund",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3010",
+					"path": [
+						"refund"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Refund",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"paidToAccountNumber\":\"5540507662\",\n\t\"paidToAccountBank\":\"008\",\n\t\"paidToAccountOwner\":\"Rangga Test\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3010/refund/5c6999f704928d730524e3c7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3010",
+					"path": [
+						"refund",
+						"5c6999f704928d730524e3c7"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
